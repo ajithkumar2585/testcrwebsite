@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS-Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            min-height: 50vh; /* Ensures content takes most of the page height */
+        }
+        .image-container {
+            height: 50vh; /* Space for the image at the bottom */
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: flex-end; /* Align image to the bottom */
+        }
+        .image-container img {
+            max-width: 100%; /* Ensures the image resizes properly */
+            max-height: 100%; /* Ensures it fits within the allocated space */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>DevOps Test World!</h1>
+        <h2>Hello DevOps World!!</h2>
+        <h3>AWS Hosting!!!</h3> 
+        <h4>System Information</h4>
+        <p><strong>Hostname:</strong> {{ hostname }}</p>
+        <p><strong>IP Address:</strong> {{ ip }}</p>
+    </div>
+    <div class="image-container">
+        <img src="images/devops.png" alt="DevOps">
+    </div>
+</body>
+</html>
